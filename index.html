@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Todo list</title>
+
+  <!-- Normalize css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+
+<body>
+  <main>
+    <div class="contenido">
+      <div class="contenido2">
+        <h1>Todo list</h1>
+        <section class="insert-todos">
+          <form id="todoForm">
+            <input type="text" id="todoInput" placeholder="Ingresa una tarea..." />
+            <button id="todoBtn">Agregar</button>
+          </form>
+        </section>
+
+        <section class="todo-container">
+          <div class="todo-info">
+            <p>Total: <span id="total"></span></p>
+            <p>Realizadas: <span id="complete"></span></p>
+          </div>
+
+          <div class="todo-list">
+            <span class="todo-header">ID</span><span class="todo-header">Tarea:</span>
+            <ul id="toDos"></ul>
+          </div>
+        </section>
+        <div class="flap"></div>
+      </div>
+    </div>
+  </main>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
